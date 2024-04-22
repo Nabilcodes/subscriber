@@ -29,5 +29,16 @@ message peaked at about 46 message. This was particularly because the publisher 
 
 ![image](https://github.com/Nabilcodes/subscriber/assets/71275597/861763c0-2f70-4007-8d27-f2430717aeb1)
 
+Screenshot of rabbitmq web app ui and 3 subscriber console around it's sides. Notice that when the 
+publisher sends data, the subscriber consumes it in an interesting task-sharing : they share it from
+subscriber to subscriber in counter-clockwise fashion, starting from the lower-left subscriber. Also 
+notice that the graph in the queued message chart goes down in the same rate that it goes up, much faster
+than it would with just one subscriber at service, which usually results in more slope when the graph 
+goes down. Also notice that the deliver and consumer acknowledgment graph in message rates chart were 
+nearly coincidental as a result of fast and near instant processing speed capability.
+
+![image](https://github.com/Nabilcodes/subscriber/assets/71275597/ab553dc6-2494-4991-93a4-a6cf6a5d74e5)
+
+
 
 
